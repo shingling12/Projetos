@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"/>
+    <title>CAlculadora</title>
+  </head>
+  <body>
+  
+    <div id="container">
+      <div id="resultado"></div>
+      <div id="juros">
+        <input
+          type="number"
+          value=""
+          class="input"
+          id="capital"
+          placeholder="Capital aplicado"
+        />
+        <input
+          type="number"
+          value=""
+          class="input"
+          id="taxa"
+          placeholder="Taxa aplicada"
+        />
+        <input
+          type="number"
+          value=""
+          class="input"
+          id="tempo"
+          placeholder="Tempo aplicado"
+        />
+      </div>
+
+      <button class="btn" onclick="limpar('')" id="limpar">C</button>
+      <button class="btn" onclick="juros()" id="js">
+        <span id="ks">Juros</span>
+      </button>
+      <button class="btn" onclick="cleaR()" id="igual">
+        <svg
+          viewBox="0 0 48 48"
+          xmlns="http://www.w3.org/2000/svg"
+          height="1.5em"
+          width="1.5em"
+        >
+          <path
+            fill="currentColor"
+            d="m22.35 38.95-13.9-13.9q-.25-.25-.35-.5Q8 24.3 8 24q0-.3.1-.55.1-.25.35-.5L22.4 9q.4-.4 1-.4t1.05.45q.45.45.45 1.05 0 .6-.45 1.05L13.1 22.5h24.8q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075-.425.425-1.075.425H13.1l11.4 11.4q.4.4.4 1t-.45 1.05q-.45.45-1.05.45-.6 0-1.05-.45Z"
+          />
+        </svg>
+      </button>
+      <button class="btn" onclick="parentese()">( )</button>
+
+      <button class="btn" onclick="btn('^')">x²</button>
+
+      <button class="btn" onclick="btn('3.1415926')">π</button>
+
+      <button class="btn" onclick="btn('÷')" id="dividir">÷</button>
+
+      <button class="btn" onclick="btn('7')">7</button>
+
+      <button class="btn" onclick="btn('8')">8</button>
+
+      <button class="btn" onclick="btn('9')">9</button>
+
+      <button class="btn" onclick="btn('×')" id="multiplicar">×</button>
+
+      <button class="btn" onclick="btn('4')">4</button>
+
+      <button class="btn" onclick="btn('5')">5</button>
+
+      <button class="btn" onclick="btn('6')">6</button>
+
+      <button class="btn" onclick="btn('+')" id="somar">+</button>
+
+      <button class="btn" onclick="btn('1')">1</button>
+
+      <button class="btn" onclick="btn('2')">2</button>
+
+      <button class="btn" onclick="btn('3')">3</button>
+
+      <button class="btn" onclick="btn('-')" id="subtrair">-</button>
+
+      <button class="btn" onclick="btn('%')" id="porcentagem">%</button>
+
+      <button class="btn" onclick="btn('0')">0</button>
+
+      <button class="btn" onclick="btn(',')">,</button>
+
+      <button class="btn" onclick="calcular()" id="calcular">=</button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
