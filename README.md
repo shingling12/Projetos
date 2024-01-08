@@ -1,6 +1,10 @@
- <h1 align="center">
-   Calculadora web  
- </h1>
+# Calculadora web  
 
- ---
+ Bom esse projeto foi feita com o intuito de pratica para aprimorar meus conhecimentos
+
+ ## Tecnologias utilizadas
+ * HTML
+ * CSS
+ * JAVASCRIPT
+ 
  
